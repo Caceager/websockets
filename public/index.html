@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    form
+
+    <label>Nombre del producto</label>
+    <input id='name' type="text" name="title">
+    <label>Precio</label>
+    <input id='price' type="price" name="price">
+    <label>url</label>
+    <input id ='url' type="url" name="url">
+      
+    <button id ='addProduct'>Agregar producto</button>
+    </form>
+
+    <div id ='productContainer'>
+      
+    </div>
+    <div id = 'chatContainer'>
+      <div id='messageContainer'>
+        
+      </div>
+      <div id='sendMessageArea'>
+        <form id ='formMensajes'>
+          <center>
+            <label for="mail">Email</label><br>
+          <input type="mail" name="mail"><br>
+          <label id='messageLabel' for="mensaje">Mensaje</label><br>
+          <textarea id='messageText' type="text" name="mail"></textarea>
+          <button id = 'sendMessageButton' type="button">Enviar</button>
+          </center>
+        </form>  
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js'></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
